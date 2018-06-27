@@ -3,5 +3,10 @@ ssh_service_name: 'sshd'
 ssh_package_name: 'sshd'
 sshd_port: 22
 sshd_protocol: 2
+apache_port: '5050'
 apache_package_name: 'httpd'
 apache_service_name: 'httpd'
+lamp_sql_package_name: 'mysql'
+lamp_sql_service_name: 'mysqld'
+lamp_php_package_name: 'php'
+lamp_php_service_name: 'php'
