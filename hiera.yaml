@@ -1,0 +1,12 @@
+---
+:backends:
+  - yaml
+:yaml:
+  :datadir: "/home/oternaud/2_ECOLE/puppet/TP_Puppet/TP_puppet_iut/hiera_db/"
+
+#-------------------------------------------------------------------------------
+#Hierarchy allow to choose the right variables dependings
+# On the OS you are running the Node on.
+#-------------------------------------------------------------------------------
+:hierarchy:
+  - "%{::osfamily}/db"

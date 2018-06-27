@@ -1,0 +1,5 @@
+---
+ssh_service_name: 'sshd'
+ssh_package_name: 'sshd'
+sshd_port: 22
+sshd_protocol: 2

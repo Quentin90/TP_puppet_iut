@@ -1,0 +1,5 @@
+---
+ssh_service_name: 'ssh'
+ssh_package_name: 'openssh-server'
+sshd_port: 22
+sshd_protocol: 2

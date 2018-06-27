@@ -1,14 +1,5 @@
 class ssh-server::params{
- case $::osfamily {
- 'debian': {
- $ssh_package_name = 'openssh-server'
- $ssh_service_name = 'ssh'
- }
- 'redhat': {
- $ssh_package_name = 'sshd'
- $ssh_service_name = 'sshd'
- }
- default: {
- fail("Wrong OS ${::osfamily}")}
- }
+	#Importation des variables en fonction de l'os grace à Hiera
+	 $ssh_package_name = hiera('ssh_package_name')
+	 $ssh_service_name = hiera('ssh_service_name')
 }
