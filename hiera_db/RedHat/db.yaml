@@ -1,7 +1,7 @@
 ---
 ssh_service_name: 'sshd'
 ssh_package_name: 'sshd'
-sshd_port: 22
+sshd_port: 1010
 sshd_protocol: 2
 apache_port: '5050'
 apache_package_name: 'httpd'
