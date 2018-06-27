@@ -3,3 +3,5 @@ ssh_service_name: 'ssh'
 ssh_package_name: 'openssh-server'
 sshd_port: 22
 sshd_protocol: 2
+apache_package_name: 'apache2'
+apache_service_name: 'apache2'
