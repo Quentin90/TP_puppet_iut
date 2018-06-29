@@ -2,13 +2,15 @@ Rapport Puppet
 Quentin OTERNAUD/Quentin GANDILLET
 
 --A noter--
-tout les tests on était fait avec l'argument --hiera_config
+tout les tests on était fait avec l'argument --hiera_config --modulepath --noop
 --
 
 
 On à organiser le projet de cette manière :
 	- Une branche (si possible) pour chaque module
 	pour permettre d'avoir un développement des modules "propre"
+	Donc 3 branches pour apache lamp munin.
+	
 
 
 Les objectifs :
@@ -17,14 +19,14 @@ Les objectifs :
 	- Mettre le plus de variable possible dans la base de données Hiera - 100%
 
 Mise en oeuvre : 
-	- Dans un premier temps j'ai créer le module ssh sans hiera avec un node ne lancant que le module ssh
+	- Dans un premier temps j'ai créer le module ssh sans hiera avec un node en ne lancant que le module ssh
 		- Le module est divisé en 4 Partie :
-			-Le fichier d'installation , le fichier pour les parametres , le fichier qui gère la config 
+			-Le fichier d'installation, le fichier pour les parametres, le fichier qui gère la config 
 			et le fichier qui lance le service.
 		On a vérifié à chaque fois la syntaxe grâce au parser et aussi testé grâce au mode -noop
 		- et on a aussi créer les templates pour les fichiers de configuration en transformant les fichiers de conf
 		en fichier .Erb (ruby)
-	- Une fois le module ssh fonctionnant j'ai créer la base de données hiera en y mettant toutes les données nécessaires (port,protocol)
+	- Une fois le module ssh fonctionnant j'ai créer la base de données hiera en y mettant toutes les données nécessaires (port,protocol) et en modifiant le fichier de conf puppet
 
 	- A parti de la j'ai créer une branche a chaque fois pour chaque module 
 	- On a ensuite développer le module apache (branch apache)
