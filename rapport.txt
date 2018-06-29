@@ -46,3 +46,4 @@ Mise en oeuvre :
 		- template erb
 		- et les 4 fichiers (init,params,service,install)
 		- puis tester avec un node lancant ssh et munin ( un des nodes finals )
+	- et finallement tout les branchs ont été merge et toutes les variables ont été stockées dans la base de données hiera.
